@@ -1,6 +1,9 @@
 # A Latex Format for Paper and Presentations for UT Austin
 
-**This is as per UT Austin's braniding guidelines @ https://brand.utexas.edu/identity/**
+**Notes:**
+
+- **NONE OF THESE FILES ARE IN OFFICIAL.**
+- **Colours and logos is as per UT Austin's braniding guidelines @ https://brand.utexas.edu/identity/ (I have tried my best to follow these but I don't take responsibility if everything is in line!)**
 
 There are several math commands available in /include/symnbols which can be used directly in all tex files
 
