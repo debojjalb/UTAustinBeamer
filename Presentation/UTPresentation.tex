@@ -1,0 +1,87 @@
+\documentclass[10pt, usenames,dvipsnames, aspectratio=169]{beamer}
+
+\input{Presentation/beamerHeader}
+\input{include/symbols}
+
+%Information to be included in the title page:
+\title[Short Title]{\textbf{Title Line 1 \\Line 2}}
+\author[Author 1 et al.]{Author 1\inst{1}, Author 2\inst{1}, Author 3\inst{2}}
+\institute[shortinst]{\inst{1} Afil 1 \and \inst{2} 
+Afil 2}
+\date{\today}
+\addbibresource{Presentation/presentationRefs.bib}
+
+\begin{document}
+
+
+\begin{frame}
+  \maketitle
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Table Of Contents}
+\begin{itemize}
+    \item 
+    \item 
+    \item
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Outline}
+\begin{center}
+{\Large \textbf{Item 1}}
+\end{center}
+\end{frame}
+
+\begin{frame}{Frame Title}
+\begin{theorem}[Theorem 1]
+    Test Theorem
+\end{theorem}
+
+\begin{definition}[Definition 1]
+    Test Definition
+\end{definition}
+
+\begin{lemma}[Lemma 1]
+    Test Lemma
+\end{lemma}
+
+\begin{proof}
+    Test Proof
+\end{proof}
+
+\vs
+
+Test Cite \cite{boyles2020transportation}
+
+\end{frame}
+
+\begin{frame}{\textbf{Bibliography}}
+\nocite{*}
+{\normalsize \printbibliography[heading=none]}
+\end{frame}
+
+\begin{frame}
+\frametitle{Outline}
+\begin{center}
+{\Large \textbf{Thank You! \\ \vs \orange{{Questions?}}}}
+\begin{figure}
+    \centering
+    \includegraphics[scale = 0.5]{example-image-a}
+    \caption{}
+    \label{fig:enter-label}
+\end{figure}
+\end{center}
+
+\footnotesize{\url{}}
+\end{frame}
+
+
+
+
+\end{document}

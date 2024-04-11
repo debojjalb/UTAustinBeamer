@@ -1,0 +1,89 @@
+\usetheme{CambridgeUS}
+
+% User Packages
+\usepackage[style=numeric,backend=biber]{biblatex}
+\usepackage{subcaption}
+\usepackage{array, makecell}
+\usepackage{pifont}
+\usepackage{tfrupee}
+\usepackage{multirow}
+\usepackage{mwe}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usepackage{comment}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage{multicol}
+\usepackage{algorithm}
+\usepackage{amsfonts} % or \usepackage{amssymb}
+\usepackage[noend]{algpseudocode}
+\usepackage[citestyle=chicago]{biblatex}
+
+% Remve circles from enumerate
+\setbeamertemplate{enumerate item}{%
+  \insertenumlabel.%
+}
+
+% Define the new color as dark orange
+\definecolor{myorange}{RGB}{191, 87, 0} 
+\definecolor{myorange2}{RGB}{191, 87, 0} 
+\definecolor{myorange3}{RGB}{191, 87, 0}
+\definecolor{offwhite}{RGB}{214, 210, 196}
+\definecolor{mygray}{RGB}{128, 128, 128} % Gray color
+\definecolor{myblue}{RGB}{51, 63, 72}
+
+% Set beamer colours
+\setbeamercolor{structure}{fg=myorange} 
+\setbeamercolor{title}{bg=myorange2, fg=white}
+\setbeamercolor{frametitle}{bg = myorange2, fg=white} 
+\setbeamercolor{block title}{bg = myorange2,fg=white}
+\setbeamercolor{author in head/foot}{bg=offwhite, fg=white}
+\setbeamercolor{title in head/foot}{bg=myorange, fg=white}
+\setbeamercolor{date in head/foot}{bg=offwhite, fg=black}
+\definecolor{mypink1}{rgb}{0, .8, .62}
+\definecolor{mypink2}{rgb}{0, .6, .69}
+\hypersetup{
+    colorlinks,
+    citecolor=myblue,
+    linkcolor=myblue
+}
+
+% Update Beamer Template
+\setbeamertemplate{footline}{}
+\setbeamertemplate{headline}{}
+\setbeamertemplate{navigation symbols}{}
+% \setbeamertemplate{footline}
+% {
+%   \leavevmode%
+%   \hfill
+%   \raisebox{2ex}[0pt][0pt]{\insertframenumber/\inserttotalframenumber}
+%   \hspace*{0.5em}
+%   \vspace{1ex}
+% } 
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.33\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+    \usebeamerfont{author in head/foot}\insertshorttitle
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.34\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+    \usebeamerfont{title in head/foot}\insertshortauthor
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.33\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+    \usebeamerfont{date in head/foot}\insertframenumber{} / \inserttotalframenumber\hspace*{2em}
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+
+
+% Graphics
+\titlegraphic{\includegraphics[scale = 0.4]{figures/logos/RGB_university_primary.pdf}}
+
+
+\addtobeamertemplate{frametitle}{}{%
+\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north east,yshift=4pt ,xshift=8pt] at (current page.north east) {\includegraphics[height=4ex, keepaspectratio]{figures/logos/knockout_university_primary.pdf}};
+\end{tikzpicture}}
+
